@@ -5,21 +5,21 @@
 class ApitoCli < Formula
   desc "Apito CLI"
   homepage "https://apito.io"
-  version "0.5.7"
+  version "0.5.8"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/apito-io/cli/releases/download/v0.5.7/apito_0.5.7_darwin_amd64.tar.gz"
-      sha256 "1fe7bb5870fe772e9bb0f781d1dcb28c3e00df99b035fb5452ddede787d15a4e"
+      url "https://github.com/apito-io/cli/releases/download/v0.5.8/apito_0.5.8_darwin_amd64.tar.gz"
+      sha256 "8e99c9e62ef5b087ba83fd06168a324c268c1434cbf69a3c89f2fe39115d2768"
 
       def install
         bin.install "apito"
       end
     end
     on_arm do
-      url "https://github.com/apito-io/cli/releases/download/v0.5.7/apito_0.5.7_darwin_arm64.tar.gz"
-      sha256 "d071d97913800c7de16e2d85cf48bbc054773ce868353a30c77b41943cf3c102"
+      url "https://github.com/apito-io/cli/releases/download/v0.5.8/apito_0.5.8_darwin_arm64.tar.gz"
+      sha256 "6ed6dad220fd696d3aa44e8bc4aff5837ae05b9054cea626d9e2bc78a4bfc591"
 
       def install
         bin.install "apito"
@@ -30,8 +30,8 @@ class ApitoCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/apito-io/cli/releases/download/v0.5.7/apito_0.5.7_linux_amd64.tar.gz"
-        sha256 "6e6239d0a7c728b3521f64267648b58dd7ba5ed47c13b3fff6aeff69c963bea6"
+        url "https://github.com/apito-io/cli/releases/download/v0.5.8/apito_0.5.8_linux_amd64.tar.gz"
+        sha256 "5e4072450c480e4fe1c18cfd5260c4548dbb681f49deeaffaf2aae496a3e3f72"
 
         def install
           bin.install "apito"
@@ -40,8 +40,8 @@ class ApitoCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/apito-io/cli/releases/download/v0.5.7/apito_0.5.7_linux_arm64.tar.gz"
-        sha256 "19fb4cd47a11762b428310873d8372646268d0029dd72e116e34f53972d21cb0"
+        url "https://github.com/apito-io/cli/releases/download/v0.5.8/apito_0.5.8_linux_arm64.tar.gz"
+        sha256 "159fe2fddedde2c2ba7a0fb7e2e31bf74965384223a9dc306dee73404b07399c"
 
         def install
           bin.install "apito"
